@@ -2,7 +2,6 @@ from os import chdir
 from glob import glob
 import pandas as pd
 import matplotlib.pyplot as plt
-import csv
 
 
 def merge(indir="/Users/karanveersingh/PycharmProjects/Sentiment_analyser/Sentiment_analyser/Analysed Data",
@@ -28,7 +27,7 @@ def visualise():
               ax=ax,
               color="red")
 
-    # plt.title("Sentiments from Tweets on CAA")
+    plt.title("Sentiments from Tweets on CAA and NRC")
     plt.show()
 
 
