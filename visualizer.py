@@ -25,7 +25,7 @@ def visualise():
     fig, ax = plt.subplots(figsize=(8, 6))
     data.hist(bins=[-1, -0.75, -0.5, -0.25, 0.25, 0.5, 0.75, 1],
               ax=ax,
-              color="red")
+              color="Maroon")
 
     plt.title("Sentiments from Tweets on CAA and NRC")
     plt.show()
