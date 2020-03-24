@@ -20,14 +20,15 @@ def merge(indir="/Users/karanveersingh/PycharmProjects/Sentiment_analyser/Sentim
 def visualise():
     data = pd.read_csv(
         "/Users/karanveersingh/PycharmProjects/Sentiment_analyser/Sentiment_analyser/Analysed Data/Merged.csv",
-        usecols=['Polarity'])
+        usecols=['Polarity', 'Subjectivity'])
     # print(data)
     fig, ax = plt.subplots(figsize=(8, 6))
+
     data.hist(bins=[-1, -0.75, -0.5, -0.25, 0.25, 0.5, 0.75, 1],
               ax=ax,
               color="Maroon")
 
-    plt.title("Sentiments from Tweets on CAA and NRC")
+    # plt.title("Sentiments from Tweets on CAA and NRC")
     plt.show()
 
 
