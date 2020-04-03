@@ -21,5 +21,10 @@ d = pd.DataFrame(K, columns=["Type"])
 d["Percentage"] = L
 
 
-d.plot(kind='bar',x='Type', y='Percentage')
+d.plot(kind='bar', x='Type', y='Percentage', color=['green', 'red', 'blue'], edgecolor='black')
+colors = {'Positive':'green', 'Negative':'red', 'Neutral':'blue'}
+labels = list(colors.keys())
+handles = [plt.Rectangle((0,0),1,1, color=colors[label]) for label in labels]
+plt.legend(handles, labels)
+
 plt.show()
